@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adds Page</title>
+	<style type="text/css">
+body
+{
+	width:320px;
+	height:480px;
+	margin:0 auto;
+	padding:0;
+	border:1px solid grey;
+border-radius: 5px;
+}
+input,textarea
+{
+	border:none;
+}
+header
+{
+	height: 10%;
+	width:100%;
+	background: #2b404e;
+	border-radius: 0px 0px 5px 5px;
+	margin-top: -20px;
+}
+header > h2
+{
+	text-align: center;
+	color: white;
+	padding-top:5px;
+}
+h1, h2, h3, h4, h5, h6 {
+line-height: 36px;
+font-weight: normal;
+color: #616161;
+font-family: 'PTSansNarrowBold';
+}
+.customTextBox2{
+	border:1px solid grey;
+	width:93%;
+	margin:10px;
+	border-radius: 5px;
+}
+.customTextBox2 h3,.customTextBox2 h3{
+	
+	line-height: 0px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.customTextBox2 h2{
+	
+	line-height: 10px;
+	text-align: center;
+}
+#addsList{
+	height:90%;
+	overflow-y: scroll;
+}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+	$(document).ready(function()
+	{
+		populateAdds(adds);
+	})
+	var adds={ "Adds": 
+						[
+					        {
+					            "add_id": "1",
+					            "add_description": "Sample Add",
+					            "add_email":"someone@example.com"
+					        },
+					        {
+					            "add_id": "2",
+					            "add_description": "Sample Add",
+					            "add_email":"someone@example.com"
+					        },
+					        {
+					            "add_id": "3",
+					            "add_description": "Sample Add",
+					            "add_email":"someone@example.com"
+					        },
+					        {
+					            "add_id": "4",
+					            "add_description": "Sample Add",
+					            "add_email":"someone@example.com"
+					        },
+					        {
+					            "add_id": "5",
+					            "add_description": "Sample Add",
+					            "add_email":"someone@example.com"
+					        },
+					        {
+					            "add_id": "6",
+					            "add_description": "Sample Add",
+					            "add_email":"someone@example.com"
+					        }
+					    ]
+}
+function populateAdds(adds)
+{
+	try
+	{
+for(var i=0;i<adds.Adds.length;i++)
+{
+
+$("#addsList").append("<div class='customTextBox2'><h2>"+adds.Adds[i].add_description+"</h2><h3>Name :someone</h3><h3>Email:"+adds.Adds[i].add_email+"</h3></div>")
+}
+}
+catch(ex)
+{
+	alert(ex);
+}
+}
+	</script>
+</head>
+<body>
+	<header><h2>Adds</h2></header>
+	<div id="addsList">
+		<!-- <div class="customTextBox2" >
+			<h2>Need a room</h2>
+			<h3>Name:  Shravan</h3>
+			<h3>Email:@gmail.com</h3>
+		</div>
+		<div class="customTextBox2" >
+			<h2>Need a room</h2>
+			<h3>Name:  Shravan</h3>
+			<h3>Email:@gmail.com</h3>
+		</div>
+		<div class="customTextBox2" >
+			<h2>Need a room</h2>
+			<h3>Name:  Shravan</h3>
+			<h3>Email:@gmail.com</h3>
+		</div>
+		<div class="customTextBox2" >
+			<h2>Need a room</h2>
+			<h3>Name:  Shravan</h3>
+			<h3>Email:@gmail.com</h3>
+		</div>
+		<div class="customTextBox2" >
+			<h2>Need a room</h2>
+			<h3>Name:  Shravan</h3>
+			<h3>Email:@gmail.com</h3>
+		</div>
+		<div class="customTextBox2" >
+			<h2>Need a room</h2>
+			<h3>Name:  Shravan</h3>
+			<h3>Email:@gmail.com</h3>
+		</div>
+		<div class="customTextBox2" >
+			<h2>Need a room</h2>
+			<h3>Name:  Shravan</h3>
+			<h3>Email:@gmail.com</h3>
+		</div>
+		<div class="customTextBox2" >
+			<h2>Need a room</h2>
+			<h3>Name:  Shravan</h3>
+			<h3>Email:@gmail.com</h3>
+		</div> -->
+	</div>
+
+</body>
+</html>

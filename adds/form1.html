@@ -1,0 +1,130 @@
+<html>
+<head>
+	
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<script type="text/javascript">
+
+	
+	</script>
+	<style type="text/css">
+/* Fancy Box Styles*/
+.modalcontainer.thinbase {
+width: 275px;
+height:330px;
+
+}
+.modalcontainer {
+margin: 20px auto 50px;
+background-color: #fff;
+border: 1px solid rgba(0,0,0,0.3);
+-webkit-border-radius: 9px;
+-moz-border-radius: 9px;
+border-radius: 9px;
+-webkit-box-shadow: 0 0 7px rgba(0,0,0,0.5);
+-moz-box-shadow: 0 0 7px rgba(0,0,0,0.5);
+box-shadow: 0 0 7px rgba(0,0,0,0.5);
+-webkit-background-clip: padding-box;
+-moz-background-clip: padding-box;
+background-clip: padding-box;
+}
+.modalcontainer-header {
+-webkit-border-radius: 8px 8px 0 0;
+-moz-border-radius: 8px 8px 0 0;
+border-radius: 8px 8px 0 0;
+padding: 3px 15px;
+background: #2b404e;
+margin-top: -3px;
+}
+.modalcontainer-header h3 {
+color: #fff;
+font-size: 17px;
+text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+line-height: 36px;
+font-weight: normal;
+color: #616161;
+font-family: 'PTSansNarrowBold';
+}
+.modalcontainer-body {
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 20px;
+}
+
+/*pop up styles*/
+.customTextBox
+{
+	border:1px solid grey;
+	border-radius: 5px;
+	width:200px;
+	height:30px;
+	padding-left: 5px;
+	margin:5px;
+}
+textarea
+{
+	width:225px;
+	resize:none;
+	margin-top: 5px;
+	height: 100px;
+	border-radius: 5px;
+	border:1px solid grey;
+	padding-left: 5px;
+	margin-left: 5px;
+}
+
+.button_example{
+border:1px solid #25729a; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ background-color: #2b404e; background-image: -webkit-gradient(linear, left top, left bottom, from(#3093c7), to(#1c5a85));
+ background-image: -webkit-linear-gradient(top, #3093c7, #1c5a85);
+ background-image: -moz-linear-gradient(top, #3093c7, #1c5a85);
+ background-image: -ms-linear-gradient(top, #3093c7, #1c5a85);
+ background-image: -o-linear-gradient(top, #3093c7, #1c5a85);
+ background-image: linear-gradient(to bottom, #3093c7, #1c5a85);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);
+}
+
+.button_example:hover{
+ border:1px solid #1c5675;
+ background-color: #2b404e;background-image: -webkit-gradient(linear, left top, left bottom, from(#26759e), to(#133d5b));
+ background-image: -webkit-linear-gradient(top, #26759e, #133d5b);
+ background-image: -moz-linear-gradient(top, #26759e, #133d5b);
+ background-image: -ms-linear-gradient(top, #26759e, #133d5b);
+ background-image: -o-linear-gradient(top, #26759e, #133d5b);
+ background-image: linear-gradient(to bottom, #26759e, #133d5b);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#26759e, endColorstr=#133d5b);
+}
+a.button_example
+{
+	line-height:15px;
+	width: 55px;
+	padding-left: 20px;
+	margin-top: 10px;
+	margin-left: 30%;
+}
+	</style>
+	<script type="text/javascript">
+function submit_clicked()
+{
+	window.$.fancybox.close();
+
+}
+	</script>
+</head>
+<body>
+<div class="modalcontainer thinbase ">
+		<div class="modalcontainer-header">
+			<h3>POST ADD</h3>
+		</div>
+		<div class="modalcontainer-body">
+			<input class="customTextBox" placeholder="Name"/>
+			<input class="customTextBox" placeholder="Email"/>
+			<textarea placeholder="Message"></textarea>
+			<a class="button_example" onclick="submit_clicked()">Submit</a>
+		</div><!-- /modalcontainer-body -->
+	</div>
+</body>
+</html>
